@@ -1,13 +1,304 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+:root{
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 96vw;
+  margin: 0 auto;
+}
+
+.links_header{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.links_header a:last-child{
+  padding: 10px 15px;
+  background-color: black;
+  color: white;
+ }
+
+.menu{
+  cursor: pointer;
+  width: 30px;
+  display: none;
+}
+
+@media (max-width:1000px) {
+  header img:first-child{
+    width: 200px;
+  }
+  .links_header{
+    display: none;
+  }
+  .menu{
+    display: flex;
+  }
+  
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+
+.carrosel {
+  width: 96vw;
+  height: calc(100vh - 180px);
+  overflow: hidden;
+  position: relative;
+  margin: 10px auto 0;
+}
+#foto{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.direita, .esquerda{
+  position: absolute;
+  height: calc(100vh - 180px);
+  padding: 0 3vw;
+  background: rgba(23, 24, 28, 0.8);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0;
+  transition: .3s;
+}
+.direita{
+  right: 0;
+}
+.direita:hover, .esquerda:hover{
+  opacity: 1;
+}
+
+.seta{
+  padding: 10px;
+  border: 1px solid white;
+  width: 20px;
+}
+#direita{
+  transform: rotate(180deg);
+}
+
+.titulo{
+  padding: 20px 0 20px 2vw;
+  background: #1c1c1c;
+  margin: 100px 0 40px;
+}
+.titulo h1{
+  color: white;
+}
+
+.box{
+  max-width: 400px;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  border: #1c1c1c solid 1px;
+  align-items: center;
+  gap: 20px;
+}
+.box img{
+  width: 100%;
+  object-fit: cover;
+}
+.box h2{
+}
+.box p{
+  padding: 0 10px ;
+  margin: auto 0;
+}
+.box a{
+  padding-bottom: 10px;
+}
+
+.caixas{
+  width: 96vw;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  overflow-x: scroll;
+}
+.caixas::-webkit-scrollbar{
+  display: none;
+}
+
+.tabela{
+  display: flex;
+  width: 96vw;
+  margin: 0 auto;
+  overflow-x: scroll;
+}
+.tabela::-webkit-scrollbar{
+  display: none;
+}
+
+table{
+  width: 96vw;
+  margin: 0 auto;
+  border-collapse: collapse;
+  color: white;
+}
+
+table td, th{
+  padding: 10px;
+  border: 1px solid #5B5B5B;
+  text-align: center;
+  background: #363636;
+}
+
+th{
+  background: #1c1c1c;
+  font-size: clamp(14px, 2vw, 32px);
+}
+
+.anotacoes_horario{
+  width: 96vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 100px;
+}
+
+
+@media (max-width:580px) {
+  .anotacoes_horario{
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.horario{
+
+}
+
+.observacao{
+  border: #1c1c1c solid 1px;
+  padding: 10px 20px;
+}
+
+.planos{
+  width: 96vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.card_plano{
+  width: 268px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px 10px;
+  background: #1c1c1c;
+  color: white;
+  align-items: center;
+  border: 2px solid #5B5B5B;
+  position: relative;
+}
+.card_plano a{
+  color: white;
+}
+.card_plano .preco{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.saiba_mais{
+  padding: 10px 0;
+  width: 100%;
+  border: 1px solid white;
+  text-align: center;
+}
+.quero{
+  position: absolute;
+  bottom: -16px;
+  padding: 10px 20px;
+  background: white;
+  border: #5B5B5B 1px solid;
+  cursor: pointer;
+}
+.card_plano a:last-child{
+  color: black;
+}
+
+footer{
+  background: #17181C;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-top: 200px;
+}
+footer a{
+  color: white;
+}
+
+footer .content{
+  width: 96vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.links, .contato{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: 40px;
+}
+footer h2{
+  font-size: 32px;
+}
+
+.email, .phone{
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.email img, .phone img{
+  width: 30px;
+}
+
+.midias{
+  display: flex;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+.direitos{
+  width: 100%;
+  text-align: center;
+  color: black;
+  background: white;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+
+@media (max-width:1000px) {
+  .logo_footer{
+    width: 200px;
+  }
+  footer .content{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .links, .contato{
+    margin: 0;
+  }
 }

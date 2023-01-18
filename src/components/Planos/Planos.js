@@ -1,4 +1,4 @@
-
+import './Planos.css'
 
 function Planos(){
 

@@ -1,0 +1,14 @@
+.titulo{
+    padding: 20px 0 20px 2vw;
+    background: #1c1c1c;
+    margin: 100px 0 40px;
+  }
+  .titulo h1{
+    color: white;
+  }
+  
+  @media (max-width:1000px) {
+    .titulo h1{
+        text-align: center;
+    }
+  }

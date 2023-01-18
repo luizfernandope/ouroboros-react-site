@@ -1,4 +1,5 @@
-import seta from '../img/seta.svg';
+import seta from '../../img/seta.svg';
+import './Carrosel.css'
 
 function Carrosel(){
 

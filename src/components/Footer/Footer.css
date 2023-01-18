@@ -1,0 +1,65 @@
+footer{
+    background: #17181C;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-top: 200px;
+  }
+  footer a{
+    color: white;
+  }
+  
+  footer .content{
+    width: 96vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .links, .contato{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 40px;
+  }
+  footer h2{
+    font-size: 32px;
+  }
+  
+  .email, .phone{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+  .email img, .phone img{
+    width: 30px;
+  }
+  
+  .midias{
+    display: flex;
+    gap: 30px;
+    margin-top: 10px;
+  }
+  
+  .direitos{
+    width: 100%;
+    text-align: center;
+    color: black;
+    background: white;
+    padding: 20px 0;
+    margin-top: 40px;
+  }
+  
+  
+  @media (max-width:1000px) {
+    .logo_footer{
+      width: 200px;
+    }
+    footer .content{
+      flex-direction: column;
+      gap: 10px;
+    }
+    .links, .contato{
+      margin: 0;
+    }
+  }

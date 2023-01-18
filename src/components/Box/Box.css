@@ -1,0 +1,31 @@
+.box{
+    max-width: 400px;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    border: #1c1c1c solid 1px;
+    align-items: center;
+    gap: 20px;
+  }
+  .box img{
+    width: 100%;
+    object-fit: cover;
+  }
+  .box p{
+    padding: 0 10px ;
+    margin: auto 0;
+  }
+  .box a{
+    padding-bottom: 10px;
+  }
+  
+  .caixas{
+    width: 96vw;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+    overflow-x: scroll;
+  }
+  .caixas::-webkit-scrollbar{
+    display: none;
+  }

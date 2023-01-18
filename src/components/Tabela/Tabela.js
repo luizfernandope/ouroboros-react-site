@@ -1,4 +1,4 @@
-
+import './Tabela.css'
 
 function Tabela(){
     

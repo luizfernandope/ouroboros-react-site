@@ -1,0 +1,50 @@
+.tabela{
+    display: flex;
+    width: 96vw;
+    margin: 0 auto;
+    overflow-x: scroll;
+  }
+  .tabela::-webkit-scrollbar{
+    display: none;
+  }
+  
+  table{
+    width: 96vw;
+    margin: 0 auto;
+    border-collapse: collapse;
+    color: white;
+  }
+  
+  table td, th{
+    padding: 10px;
+    border: 1px solid #5B5B5B;
+    text-align: center;
+    background: #363636;
+  }
+  
+  th{
+    background: #1c1c1c;
+    font-size: clamp(14px, 2vw, 32px);
+  }
+  
+  .anotacoes_horario{
+    width: 96vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 100px;
+  }
+  
+  
+  @media (max-width:580px) {
+    .anotacoes_horario{
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  
+  .observacao{
+    border: #1c1c1c solid 1px;
+    padding: 10px 20px;
+  }

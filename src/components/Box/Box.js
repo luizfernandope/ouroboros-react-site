@@ -1,7 +1,9 @@
+import './Box.css'
 
 function Box(){
 
     const link = '#'
+
 
     return(
         <div className="caixas">

@@ -1,10 +1,10 @@
-import logo from '../img/logo_cobra.png'
-import email from '../img/mail.svg'
-import phone from '../img/phone.svg'
-import instagram from '../img/instagram.svg'
-import facebook from '../img/facebook.svg'
-import whatssap from '../img/whatsap.svg'
-
+import logo from '../../img/logo_cobra.png'
+import email from '../../img/mail.svg'
+import phone from '../../img/phone.svg'
+import instagram from '../../img/instagram.svg'
+import facebook from '../../img/facebook.svg'
+import whatssap from '../../img/whatsap.svg'
+import './Footer.css'
 
 function Footer(){
 

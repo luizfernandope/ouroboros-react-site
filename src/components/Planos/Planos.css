@@ -1,0 +1,48 @@
+
+
+  .planos{
+  width: 96vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.card_plano{
+  width: 268px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px 10px;
+  background: #1c1c1c;
+  color: white;
+  align-items: center;
+  border: 2px solid #5B5B5B;
+  position: relative;
+}
+.card_plano a{
+  color: white;
+}
+.card_plano .preco{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.saiba_mais{
+  padding: 10px 0;
+  width: 100%;
+  border: 1px solid white;
+  text-align: center;
+}
+.quero{
+  position: absolute;
+  bottom: -16px;
+  padding: 10px 20px;
+  background: white;
+  border: #5B5B5B 1px solid;
+  cursor: pointer;
+}
+.card_plano a:last-child{
+  color: black;
+}

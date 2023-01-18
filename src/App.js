@@ -1,10 +1,10 @@
-import Box from './components/Box';
-import Carrosel from './components/Carrosel';
-import Header from './components/Header';
-import Planos from './components/Planos';
-import Tabela from './components/Tabela';
-import Titulo from './components/Titulo';
-import Footer from './components/Footer';
+import Box from './components/Box/Box';
+import Carrosel from './components/Carrosel/Carrosel';
+import Header from './components/Header/Header';
+import Planos from './components/Planos/Planos';
+import Tabela from './components/Tabela/Tabela';
+import Titulo from './components/Titulo/Titulo';
+import Footer from './components/Footer/Footer';
 
 function App() {
 

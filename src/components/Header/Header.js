@@ -28,10 +28,13 @@ function Header(){
             btnMenu.style.display = "block";
     };
 
+
+    
+
     return (
         <div>
         <header id="header">
-            <img src={logo} alt="logo" />
+            <img src={logo} alt="logo" id="a"/>
 
             <div className='links_header'>
                 <a href="#horario">horário de treinos</a>

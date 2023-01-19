@@ -1,6 +1,6 @@
 # Ouroboros website
 
-> Site de uma acadamia ficticia que eu criei do zero, sem fins lucrativos, funcionais e comerciais. Feito para treinar meus conhecimentos em React. 
+> Site de uma acadamia ficticia que eu criei do zero, sem fins lucrativos, funcionais ou comerciais. Feito para treinar meus conhecimentos em React. 
 
  # [Acesse o site e veja aqui](https://ouroboros-site.onrender.com/)
  

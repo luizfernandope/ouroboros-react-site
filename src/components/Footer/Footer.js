@@ -8,7 +8,6 @@ import './Footer.css'
 
 function Footer(){
 
-    const link = '#'
 
     return(
         <>
@@ -18,10 +17,10 @@ function Footer(){
 
                 <div className="links">
                     <h2>Acesso rápido</h2>
-                    <a href={link}>inicio</a>
-                    <a href={link}>treinos</a>
-                    <a href={link}>horário de treinos</a>
-                    <a href={link}>unidades</a>
+                    <a href="#header">inicio</a>
+                    <a href="#treinos">treinos</a>
+                    <a href="#horario">horário de treinos</a>
+                    <a href="#unidades">unidades</a>
                 </div>
 
                 <div className="contato">

@@ -5,7 +5,7 @@ function Planos(){
     const link = '#'
 
     return(
-        <div className="planos">
+        <div className="planos" >
 
             <div className="card_plano">
                 <h3>plano mensal</h3>

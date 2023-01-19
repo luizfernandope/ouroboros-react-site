@@ -1,9 +1,9 @@
 import './Titulo.css'
 
-function Titulo(){
+function Titulo({text, id}){
     return(
-        <div className="titulo">
-            <h1>Trenios</h1>
+        <div className="titulo" id={id}>
+            <h1>{text}</h1>
         </div>
     )
 }

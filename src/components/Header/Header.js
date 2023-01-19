@@ -5,8 +5,6 @@ import './style.css'
 
 function Header(){
 
-    const link = '#'
-
     function openMenu(){
     const btnMenu = document.getElementById("btnMenu");
     const menuMobile = document.getElementById("menu_mobile");
@@ -32,14 +30,14 @@ function Header(){
 
     return (
         <div>
-        <header>
+        <header id="header">
             <img src={logo} alt="logo" />
 
             <div className='links_header'>
-                <a href={link}>horário de treinos</a>
-                <a href={link}>treinos</a>
-                <a href={link}>unidades</a>
-                <a href={link}>comece agora</a>
+                <a href="#horario">horário de treinos</a>
+                <a href="#treinos">treinos</a>
+                <a href="#unidades">unidades</a>
+                <a href="#planos">comece agora</a>
             </div>
             <img src={menu} alt="menu icon" className="menu" id="btnMenu" onClick={openMenu}/>
         </header>
@@ -49,10 +47,10 @@ function Header(){
             <img src={close} alt="close icon" className="close_menu" onClick={closeMenu}/>
 
             <div className='links_header'>
-                <a href={link} onClick={closeMenu}>horário de treinos</a>
-                <a href={link} onClick={closeMenu}>treinos</a>
-                <a href={link} onClick={closeMenu}>unidades</a>
-                <a href={link} onClick={closeMenu}>comece agora</a>
+                <a href="#horario" onClick={closeMenu}>horário de treinos</a>
+                <a href="#treinos" onClick={closeMenu}>treinos</a>
+                <a href="#unidades" onClick={closeMenu}>unidades</a>
+                <a href="#planos" onClick={closeMenu}>comece agora</a>
             </div>
         </div>
         </div>
